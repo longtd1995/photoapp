@@ -1,0 +1,13 @@
+.header{
+    padding: 1rem 0;
+    &__link{
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        &--active,
+        &:hover{
+            text-decoration: none;
+            color: var(--primary);
+        }
+    }
+}   
