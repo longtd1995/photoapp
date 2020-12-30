@@ -22,9 +22,8 @@ function Header(props) {
           </Col>
           <Col xs="auto">
             <NavLink
-              exact
               className="header__link"
-              to="photos"
+              to="/photos"
               activeClassName="header__link--active"
             >
               Redux Project

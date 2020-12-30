@@ -3,19 +3,18 @@ import './App.css';
 import Header from './components/Header';
 import PageNotFound from './components/NotFound';
 import PhotoFeature from './features/Photo';
+import AddEditPage from './features/Photo/pages/AddEdit';
 
 function App() {
   return (
-    <div className="App">
         <BrowserRouter>
           <Header />
           <Switch>
-            <Redirect exact to="/photos" from="/" />
-            <Route exact path="/photos" component={PhotoFeature} />
+            <Redirect exact from='/' to="/photos" />
+            <Route path="/photos" component={PhotoFeature} />
             <Route component={PageNotFound} />
           </Switch>
         </BrowserRouter>
-    </div>
   );
 }
 
